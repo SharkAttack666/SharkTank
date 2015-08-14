@@ -1,0 +1,342 @@
+
+
+I am writing this document for a guide to build basic outlines for websites
+There will also be php examples,The android studio guide for shortcuts
+ruby examples, and if i have time there could be more.
+
+
+START WITH  BASIC HTML
+
+
+Html basics  with css
+<html>= it starts every script on a website
+<head> = there are many uses from what I learned so far, however there are far more uses then what I know however this section is also just for html read other chapters for or stuff
+
+The <title> tag states the title of the page, it will apear on the web site at the top usually
+
+body { 
+	background-color-: # 
+the tag above is css , it is how you 
+state the background color for your page
+
+THere is a way however to simply write your css in another documets
+then 
+you just add the code for adding css scripts
+replace the body  with a p { }or a div { }or h1 { }  and that defines either the paragraph or the 
+div as well as the heading which is the h1 tag
+
+Adding an image as your background
+body  
+	background-image: {"image.jpg"}
+note to self below
+there is far more details to add here such as sizing and indenting 
+
+Here is some basic info about html five , there are some new elements introduced to html5
+"header, section, article, aside, footer, nav.
+these tags are basic and can be used for such a thing as a blog site or article
+The <SECTION> element is a new way to describe the content on the page basically indenting it to look like a book in paragraphs
+THe<ARTICLE> tag can go inside the section tag and works the same way .  
+so I will be using these tags when I write my website script for this manual.
+The <HEADER> tag is the content at the top of the page. 
+Here is something interesting I learned and I am going to add it to this below , just the basic header tag but on the website it will display buttons to press to each section of my website.
+It will include me actually creating a logo for my site and inserting it into the page . now i am going to create the logo using a drawing program and then code it in to be used as a jgp or pgn file.
+
+<HEADER>
+<Section><a href="index.html"><img src="/desktop/websites/images/logo1.png"
+border="none" alt="Sharks Logo" title="Sharks Logo Home"/></a> HOME / BLOG / MORE</b>SECTION>
+<NAV>
+
+<UL><LI><a title="unknown"class="first"
+<a href="/signup.html">SignUp"</a></li>
+
+<UL><LI><a title="unknown"class="first"
+<a href="/home.html">HOME"</a></li>
+
+<UL><LI><a title="unknown"class="first"
+<a href="/blog.html">BLOG"</a></li>
+</NAV>
+</HEADER>
+The <footer> tag is displayed at the bottom*
+<footer> Copywrite 2015 shark attack aka chris williams</footer>
+this script above is not finished and wont work unless the .html extentions are changed to .aspx
+I am pretty sure that is because its not a text link its a button link, note to self may have to create a button 
+using paintshop or find a button script to alter and use
+
+
+all of these tags above and the ones I did not cover are great for writing a blog script 
+they  can be used to make the outline of the blog with proper indenting and styles
+header content 
+Links
+comments
+navigation around site
+footer
+
+PHP section
+Simple php code that does basically nothing
+it displays output I lied
+
+<!DOCTYPE html>
+<html>
+    <head>
+		<title></title>
+	</head>
+	<body>
+    <?php
+     switch {$t} :
+         case 0:
+             echo "$t is 0." ;
+            break;
+            case 1:
+            echo "$t is 656.";
+            break;
+            case 2:
+             echo "the beast is returning soon";
+             break;
+             case 3;
+             echo " this code academy is off the hook";
+             break;
+             default:
+                 echo" The chains are loose from the gates of hell";
+                 endswitch;
+                 
+     
+    ?>
+	</body>
+</html>
+
+This is a switch statement , which switches the output diplayed 
+it all depends on the true 
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+    <?php
+    $fruit = "Apple";
+    
+    switch ($fruit) {
+    case 1: 'Apple':
+            echo "Yummy.";
+            break;
+            echo "none of above";
+            break;
+            default:
+                echo "burn in hell oiler nation";
+    }
+    
+    ?>
+    </body>
+</html>
+
+This one uses “ case “ to determain output also from a true and false 
+statement however they name it case. & there are no true/flase tags used here
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+    <?php
+    $i = 5;
+    
+    switch ($i) {
+        case 0:
+            echo '$i is 0.';
+            break;
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+            echo '$i is somewhere between 1 and 5.';
+            break;
+        case 6:
+        case 7:
+            echo '$i is either 6 or 7.';
+            break;
+        default:
+            echo "I don't know how much it is.";
+    }
+    ?>
+    </body>
+</html>
+
+Now an endswitch is added , I will learn later what its for 
+but i can try it out to see what it diplays , anyway its below
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+</title>
+	</head>
+	<body>
+    <?php
+    $i = 5;
+    
+    switch ($i) :
+        case 0:
+            echo '$i is 0.';
+            break;
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+            echo '$i is somewhere between 1 and 5.';
+            break;
+        case 6:
+        case 7:
+            echo '$i is either 6 or 7.';
+            break;
+        default:
+            echo "I don't know how much it is.";
+    endswitch;
+    ?>
+    </body>
+</html>
+
+next up is arrays , the sample below gets you started with absolutely nothing 
+useful 
+It's my guideline however.
+<html>
+  <head>
+    <title>Arrays!</title>
+  </head>
+  <body>
+    <?php
+      $array = array("Egg", "Tomato", "Beans" , “Chips”, “Sausage”);
+    ?>    
+  </body>
+</html>
+
+<html>
+  <head>
+    <title>Leap Years</title>
+  </head>
+  <body>
+    <?php
+      for ($leap = 2004; $leap < 2050; $leap = $leap + 4) {
+        echo "<p>$leap</p>";
+      }
+    ?>
+  </body>
+</html>
+
+The code above just makes it so your not rewriting output echo
+over and over. 
+The code below is the beggining of a loop, 
+A loop starts with the “for” keyword 
+and its purpose is to tell the php to loop 
+
+html>
+  <head>
+    <title>For Loops</title>
+  </head>
+  <body>
+    <p>
+      <?php
+        // Echoes the first five even numbers
+        for ($i = 2; $i < 11; $i = $i + 2) {
+          echo $i;
+        }
+      ?>
+    </p>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+LOOPS INFO
+for loops are great for running the same code over and over, especially when you know ahead of time how many times you'll need to loop. (There are other kinds, such as while and do/while loops, that we can use when we
+don't know ahead of time how many times we'll need to loop, but we'll cover those in a later lesson.)
+There's also a special kind of loop called a for each loop that we can use to update or print out every element in a list—for example, an array. Let's coverforeach  next!
+The foreach loop is used to iterate over each element of an object—which makes it perfect for use with arrays!
+You can think of foreach as jumping from element to element in the array and running the code between {}s for each of those elements.
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" />
+
+  </head>
+  <body>
+    <h1>burn in hell</h1>
+    <div class="wrapper">
+      <ul>
+        <?php
+          $langs = array("JavaScript",
+          "HTML/CSS", "PHP",
+          "Python", "Ruby");
+        
+          foreach ($langs as $lang) {
+              echo "<li>$lang</li>";
+          }
+        
+          unset($lang);
+        ?>
+      </ul>
+    </div>
+  </body>
+</html>
+The example above shows PHP in a html script format , with a css style sheet which i will write below
+
+h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: decimal-leading-zero;
+    font-family: Tahoma, sans-serif;
+}
+
+.wrapper {
+    height: 100px;
+    border-radius: 5px;
+    background-color: #C3E9FA;
+}
+here's a foreach loop that iterates over an array and prints out each element it finds:
+<?php
+  $numbers = array(1, 2, 3);
+
+  foreach($numbers as $item) {
+      echo $item;
+  }
+?>
+ each keyword to start the loop, followed by parentheses. (This is very similar to what we've done with for loops.)
+Between the parentheses, we use the $numbers as $item) syntax to tell PHP: "For each thing in $numbers, assign that thing temporarily to the variable$item." (We don't have to use the name $item—just as withfor loops, we can call our temporary variable anything we want.)
+NEXT put the code I want to execute between the curly braces. In this case, we just echo each element in turn.
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <p>
+      <?php
+        $sentence = array("I ", "am ", "PHP!");
+        
+        foreach ($sentence as $word) {
+          echo $word;
+        }
+      ?>
+    </p>
+  </body>
+</html>
+{Foreach statements}
+here is an example 
+<?php
+$numbers = array{1,2,3};
+
+foreach{numbers as items;
+}
+?>
